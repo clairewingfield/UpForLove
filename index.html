@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+    box-sizing: border-box;
+        }
+        
+        /* Styling the header */
+        header {
+            background-color: #FACED8;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px; /* Adjust height as needed */
+        }
+        
+        /* Styling the navigation images */
+        .nav-images {
+            display: flex;
+            gap: 100px; /* Adjust space between images */
+        }
+        
+        .nav-images img {
+            width: auto; /* Adjust size as needed */
+            height: 80px; /* Adjust size as needed */
+            transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+        }
+
+        /* Apply hover effect */
+        .nav-images img:hover {
+            transform: scale(1.15); /* Increase size on hover */
+        }
+
+        /* Styling the logobanner */
+        .logobanner {
+            padding: 0; /* Remove padding to ensure image spans full width */
+            text-align: center;
+            margin-top: -20px; /* Overlapping the header slightly */
+        }
+        
+        .logobanner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100vw; /* Ensure image spans full screen width */
+        }
+
+        /* Add white space */
+        .spacer {
+            height: 40px; /* Adjust white space height as needed */
+        }
+        /* Styling the white spacer */
+        .white-spacer {
+            height: 40px; /* Same height as the first spacer */
+            background-color: white; /* White background */
+        }
+
+        /* Styling the pink spacer */
+        .pink-spacer {
+    background-color: #F6A9BB; /* Pink background */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; /* Adjust padding for text */
+    text-align: center; /* Center text */
+    display: flex; /* Flex layout for inner content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: auto; /* Automatically adjust height based on content */
+        }
+        /* Styling the darkpink footer */
+	.darkpink-footer {
+		height: 30px; /* Adjust pink spacer height as needed */
+		background-color: #AA7581; /* Pink background */
+		display: flex; /* Use flexbox */
+		align-items: center; /* Align items vertically */
+		justify-content: center; /* Center items horizontally */
+	}
+
+		
+        /* Styling for social icons */
+        .social-icons {
+            padding-top: 10px; /* Add padding above social icons */
+			padding-bottom: 0px;
+        }
+
+        /* Media query for laptop screens */
+        @media (min-width: 988px) {
+            body {
+                background-color: white; /* Set white background */
+                padding: 0 230px; /* Add padding on the sides */
+            }
+
+            .container {
+                max-width: 1200px; /* Set maximum width for content */
+                margin: 0 auto; /* Center content horizontally */
+            }
+            
+            /* Styling the tagline */
+            .tagline {
+                margin-top: -30px; /* Adjust the negative margin to overlap with the logo banner */
+            }
+        
+            .tagline img {
+                display: block;
+                margin: 0 auto; /* Center the image horizontally */
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="nav-images">
+        <div class="stream"> 
+            <a href="up4love streaming.html">
+                <img src="website elements/streaming nav button.png" width="600" height="281" alt=""/>
+            </a>
+        </div>
+
+        <div class="participants"> 
+            <a href="up4love participants.html">
+                <img src="website elements/participants nav button.png" width="600" height="200" alt=""/>
+            </a>
+        </div>
+        
+        <div class="about"> 
+            <a href="up4love about.html">
+                <img src="website elements/about nav button1.png" width="497" height="250" alt=""/>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="spacer"></div>
+
+<div class="logobanner">
+    <img src="website elements/logobanner 1.png" alt=""/>
+</div>
+
+<div class="tagline">
+    <img src="website elements/tagline.png" width="max" height="170" alt="" style="display: block; margin: 0 auto;"/>
+</div>
+
+<div class="container" style="background-color: #FFEFF2; padding: 30px 0; text-align: center;">
+    <img src="website elements/qu.png" width="200" height="200" alt="" style="margin-right: 50px;">
+    <img src="website elements/sa24.png" width="200" height="200" alt="" style="margin-right: 50px;">
+    <img src="website elements/iv.png" width="200" height="200" alt="">
+</div>
+
+<div class="white-spacer"></div> <!-- White spacer added here -->
+
+<div class="pink-spacer">
+	<div class="text-line" style="font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; color: #000000; font-size: 24px;"><strong>UP FOR LOVE</strong></div>
+
+	<div class="text-line" style="font-family: 'Arial', sans-serif; color: #595959; font-size: 12"><strong>Taking Uni Dating to New Heights One Elevator at a Time.</strong></div>
+
+<div class="social-icons">
+    <img src="website elements/instagram.png" width="30" height="30" alt="" style="margin-right: 10px;">
+    <img src="website elements/phone.png" width="30" height="30" alt="" style="margin-right: 10px;">
+    <img src="website elements/mail.png" width="39" height="30" alt="">
+</div>
+
+</div> <!-- Pink spacer added here -->
+
+<div class="darkpink-footer">
+	<div class="text-line" style="font-family:'Arial Black', sans-serif; color: #595959; font-size: 12px;">2024 UpForLoveAus All Rights Reserved</div>
+	</div>
+
+<!-- Your content goes here -->
+
+</body>
+</html>

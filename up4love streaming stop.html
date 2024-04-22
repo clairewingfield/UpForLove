@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up For Love</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Border for laptop screens */
+        @media (min-width: 988px) {
+            body {
+                background-color: white; /* Set white background */
+                padding: 0 238px; /* Add padding on the sides */
+            }
+
+            .container {
+                max-width: 1200px; /* Set maximum width for content */
+                margin: 0 auto; /* Center content horizontally */
+            }
+        }
+
+        /* Styling for white space */
+        .white-space {
+            height:8px; /* Adjust the height of the white space as needed */
+            background-color: white; /* Set the background color to white */
+        }
+		
+		/* Styling the header */
+        header {
+            background-color: #FACED8;
+			padding: 10px 0; /* Add padding on top and bottom */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			height: 80px; /* Adjust height as needed */
+        }
+
+        /* Styling the logo */
+        .logo {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+            padding-top: 10px; /* Add padding on top of the logo */
+        }
+
+        /* Styling the navigation images */
+        .nav-images {
+            display: flex;
+            gap: 10px; /* Adjust space between images */
+            align-items: center; /* Center vertically */
+        }
+
+        .nav-images img {
+            height: auto;
+            max-width: 100%; /* Ensure images don't exceed their container */
+        }
+
+        /* Adjust width for specific images */
+        .nav-images img.streaming {
+            width: 90px; /* Set width for streaming nav button */
+        }
+        .nav-images img.streaming:hover {
+    		transform: scale(1.2); /* Increase size on hover */
+        }
+		
+
+        .nav-images img.participants {
+            width: 140px; /* Set width for participants nav button */
+        }
+		
+        .nav-images img.participants:hover {
+    		transform: scale(1.2); /* Increase size on hover */
+        }
+
+        .nav-images img.about {
+            width: 90px; /* Set width for about nav button */
+        }
+        .nav-images img.about:hover {
+    		transform: scale(1.2); /* Increase size on hover */
+        }
+		
+        /* Styling the pink section */
+        .pink-section {
+            background-color: pink;
+            padding: 10px 0; /* Adjust padding to make the section shorter */
+        }
+		
+		/* Styling the grey section */
+		.grey-section {
+			background-color: #F2F2F2; /* Grey background */
+			padding: 20px 0; /* Add padding top and bottom */
+			text-align: center; /* Center text */
+		}
+
+        /* Styling the white spacer */
+        .white-spacer {
+            height: 40px; /* Same height as the first spacer */
+            background-color: white; /* White background */
+        }
+
+        /* Styling the pink spacer */
+        .pink-spacer {
+            background-color: #F6A9BB; /* Pink background */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px; /* Adjust padding for text */
+            text-align: center; /* Center text */
+            display: flex; /* Flex layout for inner content */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            height: auto; /* Automatically adjust height based on content */
+        }
+
+        /* Styling the darkpink footer */
+        .darkpink-footer {
+            height: 30px; /* Adjust pink spacer height as needed */
+            background-color: #AA7581; /* Pink background */
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        /* Styling for social icons */
+        .social-icons {
+            padding-top: 10px; /* Add padding above social icons */
+            padding-bottom: 0px;
+        }
+
+        /* Styling the tagline */
+        .tagline {
+            margin-top: -30px; /* Adjust the negative margin to overlap with the logo banner */
+        }
+
+        .tagline img {
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        /* Styling for the livestream */
+        .livestream {
+            text-align: center; /* Center the image */
+            padding-top: 20px; /* Add white space above */
+            padding-bottom: 20px; /* Add white space below */
+        }
+
+        .livestream img {
+            display: inline-block; /* Ensure the image is treated as a block element */
+        }
+		
+		/* Adjust the positioning of the video */
+		.grey-section {
+			display: flex; /* Use flexbox layout */
+			align-items: center; /* Center items vertically */
+		}
+
+		/* Style for the video */
+		.grey-section video {
+			margin-right: 20px; /* Add margin to the right to create space */
+			margin-left: 40px;
+			border: 6px solid #F6A9BB; /* Add pink border */
+		}
+
+		/* Style for the button */
+		.grey-section img {
+			max-width: 100%; /* Ensure image doesn't exceed its container */
+			height: auto; /* Maintain aspect ratio */
+			margin-left: -15px;
+			margin-top: 20px; /* Move image to the bottom */
+		}
+		
+		.start img:hover {
+			transform: scale(1.1); /* Increase size on hover */
+		}
+		.grey-section img {
+		height: 400;
+		}
+		
+		.queue-section img:nth-child(1) {
+		margin-left: 70px;
+		margin-top:50px;
+		margin-bottom: 50px;
+		}
+		
+		.queue-section img:nth-child(2) {
+		margin-left: 50px;
+		margin-top:50px;
+		margin-bottom: 50px;
+		}
+/* Style for the comment section */
+.comment-section textarea {
+    height: 40px; /* Adjust height as needed */
+    margin-bottom: 10px; /* Add some space below the textarea */
+    background-color: #AEAEAE; /* Dark grey background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+}
+
+/* Style for the comment section */
+.comment-section {
+    margin-top: 20px; /* Add some space above the comment section */
+    text-align: center; /* Center the content */
+}
+
+.comment-section textarea {
+    width: 804px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-bottom: 10px; /* Add some space below the textarea */
+    background-color: #AEAEAE; /* Dark grey background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+	
+}
+
+.comment-section input[type="submit"] {
+    padding: 10px 20px; /* Add padding to the button */
+    margin-bottom: 20px;
+    background-color: #B43250; /* Grey background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor on hover */
+}
+		
+.comment-section input[type="submit"]:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.comment-text {
+    background-color: #F2F2F2; /* Grey box background */
+    padding: 20px; /* Add more padding to increase height */
+    margin-bottom: -20px; /* Add some space below the textarea */
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    height: 150px; /* Increase the height */
+}
+
+    </style>
+</head>
+<body>
+	
+<div class="white-space"></div> <!-- White space added here -->
+<header> <a href="index.html"><img src="website elements/logo crop.png" class="logo" alt=""/></a>
+    <div class="nav-images"> <a href="up4love streaming.html"><img src="website elements/streaming nav button.png" alt="" class="streaming"/></a>
+        <a href="up4love participants.html"><img src="website elements/participants nav button.png" alt="" class="participants"/></a>
+        <a href="up4love about.html"><img src="website elements/about nav button1.png" alt="" class="about"/></a>
+    </div>
+</header>
+
+<div class="livestream">
+<img src="website elements/livestream.png" width="500" height="auto" alt=""/>
+</div>
+	
+<div class="grey-section">
+    <video controls width="600">
+        <source src="website elements/video.MP4" type="video/mp4">
+    </video>
+    <div class="start">
+        <a href="up4love streaming.html">
+            <img src="website elements/START.png" width="150" height="auto" alt="">
+        </a>
+    </div> 
+</div>
+
+
+
+<div class="queue-section">
+<img src="website elements/work2.png" width="300" height="auto" alt=""/>
+<img src="website elements/song box.png" width="300" height="auto" alt=""/>
+</div> 
+	
+	
+<!-- Comment section -->
+<div class="comment-text" 
+	 style="font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; color: #000000; font-size: 24px;">JOIN THE CONVERSATION
+</div>
+	
+<div class="comment-section">	
+    <form action="#" method="post"> <!-- You can change action="#" to your backend script -->
+        <textarea name="comment" id="comment" placeholder="Type something..." required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+	
+<div class="pink-spacer">
+  <div class="text-line" style="font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; color: #000000; font-size: 24px;"><strong>UP FOR LOVE</strong></div>
+
+    <div class="text-line" style="font-family: 'Arial', sans-serif; color: #595959; font-size: 12"><strong>Taking Uni Dating to New Heights One Elevator at a Time.</strong></div>
+
+    <div class="social-icons">
+        <img src="website elements/instagram.png" width="30" height="30" alt="" style="margin-right: 10px;">
+        <img src="website elements/phone.png" width="30" height="30" alt="" style="margin-right: 10px;">
+        <img src="website elements/mail.png" width="39" height="30" alt="">
+    </div>
+</div> <!-- Pink spacer added here -->
+
+<div class="darkpink-footer">
+    <div class="text-line" style="font-family:'Arial Black', sans-serif; color: #595959; font-size: 12px;">2024 UpForLoveAus All Rights Reserved</div>
+</div>
+
+<!-- Your content goes here -->
+
+</body>
+</html>
